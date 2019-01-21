@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Layout</title>
+	<style>
+	    article {
+			border : 2px solid blue;
+	    }
+
+	    /* block 형 tag의 기본값(default) */
+	    /* 
+	    	block 형 tag
+			한개의 tag가 브라우저의 width를 모두 차지하는 tag
+			div, p, article, header, footer 등의 tag
+	    */
+		#block1 {
+			display: block;
+		}
+
+		/* 
+			block 형  tag는 width와 height를 지정해서
+			box의 크기를 조절할 수 있다.
+		*/
+		#block2 {
+			display: block;
+			width:50%;
+			height:60px;
+		}
+
+		/*
+		  inline tag는 box형과 달리 크기 조절이 안되는 tag
+		  a, b, span, i
+		  inline tag는 문자열의 길이 만큼만 폭을 갖고 있으며
+		  이어서 inline tag가 연속해서 오면 줄바꿈이 되지 않고
+		  같은 줄에 표시가 된다.
+		*/
+		#inline {
+			display: inline;
+			width:20% height:20px;
+		}
+
+		/*
+			html5에서 사용되는 inline-block tag
+			inline과 block 의 성질을 모두 갖고 있다.
+			1. 폭(width)과 높이(height)를 자유롭게 설정 가능
+			2. width 작은면 여러 tag를 이어 붙일 수 있다.
+
+		*/
+		.inline-block {
+			display: inline-block;
+			width : 20%;
+			height : 60px;
+
+			/* ie 7 이하에서 */
+			*zoom:1;
+			*display: inline;
+		}
+
+
+</style>
+</head>
+<body>
+	<section>
+		
+		<article id="block1">block1</article>
+		<article id="block2">block2</article>
+		<article id="inline">inline</article>
+
+		<article class="inline-block">inline block</article>
+		<article class="inline-block">inline block</article>
+		<article class="inline-block">inline block</article>
+		<article class="inline-block">inline block</article>
+
+	<section>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Layout</title>
+	<style>
+
+		header {
+			background-color: #666;
+			padding: 20px;
+			text-align: center;
+			font-size: 35px;
+			color:white;
+
+		}
+		nav {
+			float:left;
+			width: 30%;
+			background-color: #ccc;
+			padding:20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		article {
+			float:left;
+			padding:20px;
+			width:60%;
+			background-color: #f1f1f1;
+
+		}
+
+		section:after {
+			content: "";
+			display: table;
+			clear:both;
+		}
+
+		footer {
+			background-color: #777;
+			padding: 10px;
+			text-align: center;
+			color:white;
+
+		}
+
+	</style>
+</head>
+<body>
+	<header><h2>대한민국</h2></header>
+	<section>
+		<nav>
+			<ul>
+				<li><a href="#">광주광역시</a></li>
+				<li><a href="#">전남 화순군</a></li>
+				<li><a href="#">전남 담양군</a></li>
+				<li><a href="#">함평군</a></li>
+				<li><a href="#">나주시</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<h3>광주 광역시</h3>
+			<p>광주 광역시는 대한민국 서남부에 있는 광역시 입니다 동남쪽으로 전남 화순군, 동북쪽으로 전남 담양군, 서쪽으로 함평군 서남쪽으로 나주시, 북쪽으로 장성군과 접한다. 2005년까지 전남 도청소재지 였다. 
+		</article>	
+	</section>
+	<footer>CopyRight &copy; callor@callor.com</footer>
+
+
+
+</body>
+</html>
