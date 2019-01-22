@@ -1,0 +1,99 @@
+/* 
+	지금 보이는 문서의 모든 tag, id, class에 모두 적용하라
+	*/
+	* {
+		/* 
+		box의 border 에 따라 크기가 일치 하지 않는 
+		현상을 막기 위한 방법 
+		*/
+		-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+
+	body {
+		/* body 백그라운드에 이미지 넣기 */
+		background-image: url("original.jpg");
+		background-repeat: no-repeat;
+	}
+
+	#korea1 {
+		max-width:500px;
+		margin:20px auto;
+		border:1px solid blue;
+	}
+
+	#korea2 {
+		max-width:500px;
+		margin:20px auto;
+		padding: 20px;
+		border:10px dotted blue;
+	}
+
+	#korea3.div-class1 {
+		border: 10px dashed green;
+	}
+
+	.div-class1 {
+		max-width:500px;
+		margin:20px auto;
+		border:5px double red;		
+	}
+
+	#korea5, #korea6 {
+		border: 1px groove yellow;
+	}
+
+	#korea5 {
+
+
+
+		border :5px solid blue; /* 굵기 모양 색상 동시 지정 */
+		border-style: solid;
+		border-width: 10px;
+		border-color: blue;
+
+		border-top: 1px dotted yellow;
+		border-bottom: 1px dotted blue;
+
+		border-radius: 50%;
+
+
+	}
+
+	#korea7 {
+
+		width:300px;
+		height: 300px;
+		border-radius: 50%;
+		border : 5px solid green;
+
+	}
+
+	#korea8 {
+		width: 384px;
+		height: 240px;
+		margin: 0 auto;
+		background-image: url("original.jpg");
+	}
+
+	/*
+		#korea8 box내에 p tag로 문자열을 표시하고
+		반투명하게 만는 효과
+	*/
+	#p_text {
+
+		padding: 10px;
+		text-align: center;
+		font-size: 50pt;
+		font-weight: bold;
+
+		/* 배경만 반투명하게 */
+		background-color: rgba(255,255,255,0.5);
+
+		/*  글자와 배경을 모두 반투명하게 */
+		/*
+		background-color: #ffffff;
+		opacity: 0.5;
+		*/
+	}

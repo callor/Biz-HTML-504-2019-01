@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Text Decoration</title>
+	<style>
+	/* style 지정 */
+	/* tag에 직접 지정 한는 방법 */
+	p {
+		color : blue; /* 문자열을 파란색으로 */
+	}
+
+	/* id에 지정하는 방법 */
+	/* id는 pk와 원리가 같아서 한 문서 내에서 같은 id는 선언 불가 */
+	/* 선언되지 않는 id도 style을 지정 할 수 있다. */
+
+	#p1 {
+		background-color: yellow;
+	}
+
+	#p2 {
+		background-color: green;
+	}
+
+	/* class에 지정하는 방법 */
+	/* class는 여러 곳에 동시에 지정하고자 할때 */
+	.no1 {
+		font-size: 20pt;
+	}
+
+	.no2 {
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	#t1 {
+		font-color:blue;
+		font-size: 20pt;
+		font-style: italic;
+	}
+
+
+	#bq {
+
+		color : blue;
+		font-size: 20pt;
+	}
+
+
+	</style>
+</head>
+<body>
+
+<p id="p1" class="no1">나는 <b>자랑스런 태극기</b> 앞에 <i>조국의 통일과 번영</i>을 위하여 <u>정의와 진실로써</u> 충성을 다할 것을 <s>다짐합니다</s>
+
+<p class="no1">p tag로 작성된 문서 전체(문단)에 효과를 주고자 할때는 style에서 지정을 하고, 특별 단어를 <b>두껍게(b tag)</b> <i>이탤릭(i tag)</i> <u>밑줄(u tag)</u> <s>취소선(s tag)</s>
+
+<p class="no1">문서를 강조하거나 중요도를 표시하하는 tag <strong>강조( strong) </strong> <em>중요도(em)</em> 
+
+<p class="no1">간단한 수식에서 윗첨자 2<sup>2</sup> 아래첨자10<sub>(2)</sub>	
+
+
+
+<p class="no2">나는 
+	<font color="green" face="고딕체" size="20">자랑스런 태극기</font> 앞에<span style="font-color:red;font-size:30pt;">조국의 통일과 번영을 위하여</span> 정의와 진실로써 충성을 다할 것을 다짐합니다
+
+<p id="p2" class="no1">나는 <span id="t1">자랑스런 태극기</span> 앞에 조국과 민족의 무궁한 영광을 위하여 몸과 마음을 바쳐 충성을 다할 것을 다짐합니다
+
+
+<p class="no2">나는 <insert>자랑스런 태극기(insert tag)</insert> 앞에 
+	<del>조국과(s tag)</del> <mark>민족의 무궁한 영광</mark>을 위하여 몸과 마음을 바쳐 <span style="background-color:blue;color:yellow;">충성을 다할 것을</span> 다짐합니다
+
+
+<p class="no1">나는 <q>자랑스러운 태극기 앞에 자유롭고 정의로운 대한민국의 무궁한 영광을 위하여 충성을 다할 것을 굳게</q> 다짐합니다
+
+<p class="no2">나는 자랑스러운 태극기 앞에</p>
+<blockquote id="bq" cite="국기에 대한 맹세">자유롭고 정의로운 대한민국의 무궁한 영광을 위하여 충성을 다할 것을 굳게 다짐합니다 자유롭고 정의로운 대한민국의 무궁한 영광을 위하여 충성을 다할 것을 굳게 다짐합니다</blockquote>
+
+<abbr id="ab" title="국기에 대한 맹세">자유롭고</abbr> 정의로운 <abbr title="Republic of Korea">대한민국</abbr>의 무궁한 영광을 위하여 충성을 다할 것을 굳게 다짐합니다 자유롭고 정의로운 대한민국의 무궁한 영광을 위하여 충성을 다할 것을 굳게 다짐합니다
+
+<footer>
+	<address>CopyRight &copy; callor@callor.com</address>
+<footer>	
+
+</body>
+</html>
