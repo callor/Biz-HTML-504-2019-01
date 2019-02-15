@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.flex-container {
+			display: flex;
+			-ms-display: flex; /* ie 11에서 일부 문제 발생 */
+		}
+
+		.items{
+
+			height:100px;
+			border:1px solid blue;
+			background-color: #5C3;
+			margin:3px;
+
+			/* box 내부의 컨텐츠를 가로세로 중앙에 배치 */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-flow: column wrap;
+
+			-ms-display: flex;
+			-ms-align-items: center;
+			-ms-justify-content: center;
+			-ms-flex-flow: column wrap;
+		}
+
+		#item1 {
+			/* 
+			graw, shrink basic 지정해서 가로 정렬 시키는 옵션 
+			*/
+			/* flex: 0 0 auto;  */
+			flex : 1 ; /* positive num */
+
+		}
+		#item2 {
+			flex : 5 ;
+		}
+		#item3 {
+			flex : 3;
+		}
+
+		#item4 {
+			flex : 500px;
+			
+			padding:10px;
+
+			/* height : auto; */
+			height: 500px;
+			display: flex;
+			flex-flow: column;
+			overflow-y: auto;
+
+		}
+		#item5 {
+			flex : 300px;
+		}
+
+		#item6 {
+			flex : 100px;
+		}
+
+		#subitem6 {
+			
+			width : 30px;
+			height : 30px;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div id="item1" class="items">1:1</div>
+		<div id="item2" class="items">2:5</div>
+		<div id="item3" class="items">3:3</div>
+	</div>
+	<div class="flex-container">
+		<div id="item4" class="items">
+		<p><p>우리는 민족중흥의 역사적 사명을 띠고 이 땅에 태어났다. 조상의 빛난 얼을 오늘에 되살려, 안으로 자주독립의 자세를 확립하고, 밖으로 인류 공영에 이바지할 때다. 이에, 우리의 나아갈 바를 밝혀 교육의 지표로 삼는다.
+
+			<p>성실한 마음과 튼튼한 몸으로, 학문과 기술을 배우고 익히며, 타고난 저마다의 소질을 계발하고, 우리의 처지를 약진의 발판으로 삼아, 창조의 힘과 개척의 정신을 기른다. 공익과 질서를 앞세우며 능률과 실질을 숭상하고, 경애와 신의에 뿌리박은 상부상조의 전통을 이어받아, 명랑하고 따뜻한 협동 정신을 북돋운다. 우리의 창의와 협력을 바탕으로 나라가 발전하며, 나라의 융성이 나의 발전의 근본임을 깨달아, 자유와 권리에 따르는 책임과 의무를 다하며, 스스로 국가 건설에 참여하고 봉사하는 국민 정신을 드높인다.
+
+			<p>반공 민주 정신에 투철한 애국 애족이 우리의 삶의 길이며, 자유 세계의 이상을 실현하는 기반이다. 길이 후손에 물려줄 영광된 통일 조국의 앞날을 내다보며, 신념과 긍지를 지닌 근면한 국민으로서, 민족의 슬기를 모아 줄기찬 노력으로, 새 역사를 창조하자.
+
+			<p>1968년 12월 5일</p>
+		</div>
+		<div id="item5" class="items">5:5</div>
+		<div id="item6" class="items">
+			<div id="subitem6">6:3</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
