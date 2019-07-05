@@ -1,0 +1,91 @@
+* {
+
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+}
+
+body {
+	max-width:80%;
+	padding: 10px;
+	margin: 0 auto; /* 가운데 자동 정렬 */
+}
+
+header {
+	background-color: #00aba9 ; /* teal */
+	color : #fff;
+	text-align: center;
+	font-size: 20pt;
+	padding: 0.01em; /* 단위기호 em */
+}
+
+nav {
+
+	width : 100%;
+	display: block;
+	color: #fff;
+	background-color: #0050ef;
+
+}
+
+nav .nav-item {
+	padding: 8px 16px; /* 위아래 8px 좌우 16px */
+	
+	padding-left: 16px;
+	padding-right: 16px;
+
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+	width: auto;
+	border:none;
+	display: inline-block;
+	outline: 0;	
+}
+
+.nav-item:hover {
+	color : #000;
+	background-color: #ccc;
+}
+
+#nav-home:hover {
+	color:#000;
+	background-color: yellow;
+}
+
+a {
+	background-color: transparent; /* 배경색을 투명하게 */
+	text-decoration: none;
+	color:inherit; /* a tag를 감싸고 있는 ta의 글자색을 그대로 쓰겠다 */
+}
+
+.div-a {
+
+	width:100px;
+	height: 100px;
+	background-color: green;
+	position: relative; /* div위치를 임의로 지정 설정, 상대적 위치 */
+
+}
+
+/* IE 10 이상에서 적용되는 style 들 */
+/* 애니메이션을 설정 */
+@keyframes mymove {
+	from { left : 0px; }
+	to {left : 200px;}
+
+}
+
+/* 생성한 mymove를 #div1에 적용해서 실행하라 */
+#div1 {
+	animation: mymove 5s infinite;
+	-webkit-animation: mymove 5s infinite;
+}
+
+/* 마우스를 div2에 올렸을때 */
+#div2:hover {
+	/* 회전을 70도 만큼, 크기를 2배로 변경하라 */
+	transform:rotate(70deg) scale(2);
+	-webkit-transform:rotate(70deg) scale(2);
+}

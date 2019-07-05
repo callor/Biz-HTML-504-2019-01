@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+		$("p").click(function(){
+			alert("반갑습니다")
+		})
+
+		$("#me").click(function(){
+			alert("나를 클릭 했군요")
+		})
+
+		$(".c1").click(function(){
+			var text = $(this).text()
+			alert("나는 " + text + " 입니다")
+		})
+	
+	})
+
+
+	function myfunc() {
+		alert("나는 p tag 입니다")
+	}
+
+</script>
+
+</head>
+<body>
+	<p onclick="myfunc()">클릭해 주세요</p>
+	<p id="me">나를 클릭해 주세요</p>
+	<p class="c1">클래스 1</p>
+	<p class="c1">클래스 2</p>
+	<p class="c1">클래스 3</p>
+	<p class="c1">클래스 4</p>
+	<p class="c1">클래스 5</p>
+</body>
+</html>
